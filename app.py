@@ -8,7 +8,6 @@ import pandas as pd
 import base64
 import io
 import plotly.graph_objects as go
-import matplotlib.pyplot as plt
 from datetime import datetime
 import time 
 # from numpy.ma.core import shape
