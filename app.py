@@ -11,6 +11,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 import time 
 # from numpy.ma.core import shape
+import matplotlib.pyplot as plt
 
 app = Dash(__name__)
 server = app.server
