@@ -73,10 +73,10 @@ print(total_fallecidos, " de fallecidos, equivalente a ", round((100/int(total_r
 print("\n\n**** PORCENTAJE DEFUNCIONES DEL TOTAL DE REGISTROS:\n")
 print("MUJERES: ", round((100/int(total_rows))*int(len(cantindadMP2.axes[0])), 6),"% -  HOMBRES: ", round((100/int(total_rows))*int(len(cantindadHP2.axes[0])), 6), "%")
 
-soloUICDef.groupby('SEXO')['ID_REGISTRO'].size().plot(kind='bar')
-eje_x = resDefUIC[0].tolist()
+#soloUICDef.groupby('SEXO')['ID_REGISTRO'].size().plot(kind='bar')
+#eje_x = resDefUIC[0].tolist()
 ## Valores para el eje y
-eje_y = resDefUIC[0].tolist() 
+#eje_y = resDefUIC[0].tolist() 
 #GRAFICA
 # plt.bar(resultadoPadComunesInd['Padecimientos'],resultadoPadComunesInd['Cantidad'])
 # plt.ylim(0, 1900)
@@ -219,4 +219,4 @@ def update_output(value):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
